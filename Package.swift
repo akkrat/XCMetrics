@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "XCMetricsUtils", targets: ["XCMetricsUtils"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/spotify/xclogparser", from: "0.2.24"),
+        .package(url: "https://github.com/akkrat/xclogparser", .branch("fix_force_unwrap_131")),
         .package(url: "https://github.com/apple/swift-package-manager.git", .exact("0.3.0")),
         .package(url: "https://github.com/grpc/grpc-swift.git", .exact("1.0.0-alpha.9")),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.23.0"),
